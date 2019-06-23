@@ -1,0 +1,18 @@
+project = CH28_MIRA5_MiSeq_deconseq
+job = genome,denovo,accurate
+parameters = -GE:not=4 -NW:cmrnl=no -NW:cac=warn
+
+readgroup = paired
+autopairing
+data = flash.notCombined_1_clean.fq.paired.fastq.gz flash.notCombined_2_clean.fq.paired.fastq.gz
+technology = solexa
+template_size = 50 700 autorefine
+segment_placement = ---> <---
+
+readgroup = unpaired
+data = flash.notCombined_1_clean.fq.single.fastq.gz flash.notCombined_2_clean.fq.single.fastq.gz
+technology = solexa
+
+readgroup = merged
+data = flash.extendedFrags_clean.fastq.gz
+technology = solexa
