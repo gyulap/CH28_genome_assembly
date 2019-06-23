@@ -11,7 +11,7 @@ Pipeline for the genome assembly of *Mycolicibacterium* sp. CH28 published by Zs
 * fastq-pair v0.1 [link](https://github.com/linsalrob/fastq-pair)
 * MIRA v5rc2 [link](https://github.com/bachev/mira)
 
-Make sure that every tool works and are in your PATH. For some reason DeconSeq work only if I run it directly through perl so change the path to your `deconseq.pl` in the script.
+Make sure that every tool works and are in your PATH. For some reason DeconSeq works only if I run it directly through perl so change the path to your `deconseq.pl` in the script.
 
 ## Usage
 Download this directory and run the `CH28_genome_assembly.sh` script which downloads sequences from the SRA database and processes them. The results are placed in the 'CH28_MIRA5_MiSeq_deconseq' directory.
