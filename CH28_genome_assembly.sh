@@ -21,7 +21,7 @@ pigz -p $p *.fastq
 
 # Correcting reads with Lighter
 
-lighter -od . -r *_1.fastq.gz -r *_2.fastq.gz -K 21 6500000 -t 4 -maxcor 1 -trim
+lighter -od . -r *_1.fastq.gz -r *_2.fastq.gz -K 32 6100000 -t 4 -maxcor 1 -trim
 
 # Merging reads with FLASH
 
